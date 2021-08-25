@@ -1,0 +1,385 @@
+body {
+    font-family: 'Microsoft JhengHei', 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1rem;
+}
+
+/*設定還沒瀏覽過的連結樣式*/
+a:link {
+	text-decoration:none;
+}
+/*設定已經瀏覽過的連結樣式*/
+a:visited {
+	text-decoration:none;
+}
+/*設定滑鼠移到連結上的樣式*/
+a:hover {
+	text-decoration:none;
+	color:#005d20;
+}
+/*設定正在被點選的連結樣式*/
+a:active {
+	text-decoration:none;
+}
+.headerbg{
+	background: #ffffff;
+	-webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.4));
+	z-index:20;
+	position: fixed;
+	width: 100%;
+}
+
+.navfont{
+	font-weight:bold;
+	font-size: 1.1rem;
+	color: #005d20;
+}
+.navfont:hover{
+	color: #efa93f;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    /* color: rgba(0,0,0,.7); */
+    color: #efa93f;
+}
+.navbar-light .navbar-nav .nav-link {
+    /* color: rgba(0,0,0,.5); */
+    color: #005d20;
+}
+
+.cellnavbtn:active{
+	-webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+}
+.searchbtn{
+	width: 10rem;
+}
+
+.leftbtnpos{
+	position: fixed;
+	top: 150px;
+	z-index:10;
+	left: 50px;
+}
+
+.leftbtn{
+	background: #6d9340;
+	border-radius:50%;
+	width: 50px;
+	height: 50px;
+	-webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+}
+.leftbtn:hover{
+	background: #efa93f;
+}
+
+.donatebtn{
+	position: fixed;
+	bottom: 90px;
+	z-index:10;
+	right: 0px;
+}
+
+.bigbtn{
+	position: fixed;
+	bottom: 20px;
+	z-index:10;
+	right: 0px;
+}
+/*放大鏡*/
+.wrapper-magnifier {
+	position: fixed;
+    z-index: 1000;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgba(255,166,32,0.5);
+    box-shadow: 2px 2px 5px rgba(255,166,32,0.2);
+    background: #fff;
+    border-radius: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.magnifier-inner {
+    position: absolute;
+    transform-origin: left top;
+    -ms-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2);
+}
+.mask {
+    position: absolute;
+    z-index: 90;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.zonemar{
+	margin-bottom: 200px;
+}
+.btnshadow:hover{
+	-webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.4));
+}
+
+.titilefont{
+	font-weight:bold;
+	font-size: 2rem;
+	color: #70983f;
+}
+
+.titlezone{
+	overflow: hidden;
+	background-image:url('../images/line.png');
+	background-repeat: no-repeat;
+	color: transparent;
+	font-size: 1.5rem;
+}
+.titleinfont{
+	background: white;
+	width: 140px;
+	margin-top: -50px;
+}
+.titlein2{
+	background: white;
+	width: 200px;
+	margin-top: -50px;
+}
+.titlein3{
+	background: white;
+	width: 370px;
+	margin-top: -50px;
+}
+.cardfont{
+	font-weight:bold;
+	color: black;
+}
+
+.morefont{
+	/*綠色*/
+	color: #70983f;
+}
+.morefont:hover{
+	/*橘色*/
+	color: #efa93f;
+}
+
+.numbertitile{
+	color: #70983f;
+	font-weight:bold;
+}
+.numbertitile:hover{
+	color: #efa93f;
+}
+
+.scrollnumber{
+	font-weight:bold;
+	color: #70983f;
+	font-size: 3rem;
+}
+.scrollnumber:hover{
+	color: #efa93f;
+}
+
+.runNum{
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    /*border-top: #CCCCCC solid 1px;
+    border-bottom: #CCCCCC solid 1px;*/
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+.runNum>li{
+    list-style: none;
+    width: 40px;
+    float: left;
+    position: absolute;
+}
+
+.fbheight{
+	height: 480px;
+	overflow: hidden;
+}
+
+#owl-demo {
+    margin-left: auto;
+    margin-right: auto;
+}
+#owl-demo .item {
+    display: block;
+    margin: 5px;
+}
+#owl-demo img {
+    display: block;
+    width: 100%;
+}
+.owl-theme .owl-controls .owl-nav [class*=owl-]{
+	background: transparent;
+}
+.owl-theme:hover .owl-controls:hover .owl-nav:hover [class*=owl-]{
+	background: transparent;
+}
+.owlbtn{
+	background: #70983f;
+	color:#ffffff;
+}
+.owlbtn:hover{
+	background: #efa93f;
+	color:#ffffff;
+}
+.owlbtn:active{
+	background: #efa93f;
+	color:#ffffff;
+}
+/*灰階*/
+.change{
+	-webkit-filter:grayscale(1);
+}
+/*hover回原色*/
+.change:hover{
+	-webkit-filter:grayscale(0);
+}
+.footerfont{
+	font-size: 0.8rem;
+	color: #ffffff;
+}
+.bookbtn{
+	width: 9rem;
+}
+.whitefont{
+	color: #ffffff;
+	font-size: 0.9rem;
+}
+.footerlink{
+	color: #ffffff;
+	font-size: 0.8rem;
+}
+.footerlink:hover{
+	color: #efa93f;
+}
+
+/*緣起宗旨*/
+.breadfont{
+	font-size: 0.9rem;
+	color: gray;
+}
+
+
+
+@media (min-width: 1200px){
+	
+}
+/*左邊按鈕*/
+@media (max-width: 1380px){
+	.leftbtnpos{
+		left: 20px;
+	}
+}
+
+
+
+
+
+/*xl*/
+@media (max-width: 1199px){
+	.fbheight{
+		height: 400px;
+		overflow: hidden;
+	}
+}
+
+/*lg*/
+@media (max-width: 991px){
+	.cellnavbg{
+		background: #70983f;
+	}
+	.donatebtn{
+		bottom: 20px;
+	}
+	.newsleftpad{
+		padding-right: 0.5rem;
+	}
+	.newsrightpad{
+		padding-left: 0.5rem;
+	}
+	.titilefont{
+		font-size: 1.5rem;
+	}
+	.titleinfont{
+		width: 105px;
+		margin-top: -45px;
+	}
+	.titlein2{
+		width: 150px;
+		margin-top: -45px;
+	}
+	.titlein3{
+		width: 275px;
+		margin-top: -45px;
+	}
+	.fbheight{
+		height: 280px;
+		overflow: hidden;
+	}
+	.bookmar{
+		margin-bottom: 100px;
+	}
+	
+}
+
+/*md*/
+@media (max-width: 767px){
+	
+}
+
+/*sm*/
+@media (max-width: 575px){
+	.numbertitile{
+		font-size: 1rem;
+	}
+	.scrollnumber{
+		font-size: 2.5rem;
+	}
+	.bookbtn{
+		width: 6rem;
+	}
+	.footerfont{
+		font-size: 0.8rem;
+	}
+	.footerimg{
+		width: 40%
+	}
+	.footerimg2{
+		width: 60%
+	}
+	.cardfont{
+		font-size: 0.9rem;
+	}
+	.welcomefont{
+		font-size: 2rem;
+	}
+	.aimtitle{
+		font-size:1.3rem;
+	}
+}
+
+/*footer img*/
+@media (max-width: 360px){
+	.footerimg{
+		width: 70%
+	}
+	.footerimg2{
+		width: 80%
+	}
+}
